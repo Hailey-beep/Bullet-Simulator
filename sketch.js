@@ -35,13 +35,13 @@ function draw() {
     bullet.velocityX = 0;
     var damage = 0.5*weight*(2*speed) / (3*thickness);
 
-    //green = good deformation / non sever crash
+    //green = good wall
     if(damage >= 10) {
       bullet.shapeColor = "green";
       severity = "Effective";
     }
 
-    //Red = lethal deformation / very sever crash
+    //Red = bad wall
     if(damage < 10) {
       bullet.shapeColor = "red"
       severity = "Not effective";
